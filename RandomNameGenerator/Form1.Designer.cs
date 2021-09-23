@@ -51,6 +51,21 @@ namespace RandomNameGenerator
             // 
             this.listbox1.FormattingEnabled = true;
             this.listbox1.ItemHeight = 20;
+            this.listbox1.Items.AddRange(new object[] {
+            "Scott",
+            "Jay",
+            "Torrie",
+            "Dennis",
+            "Joshua",
+            "Joe",
+            "Michael",
+            "Daniel",
+            "Billy",
+            "Coung",
+            "Erick",
+            "Lumiere",
+            "Austin",
+            "Yohan"});
             this.listbox1.Location = new System.Drawing.Point(34, 57);
             this.listbox1.Name = "listbox1";
             this.listbox1.Size = new System.Drawing.Size(235, 264);
