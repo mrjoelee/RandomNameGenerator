@@ -38,25 +38,31 @@ namespace RandomNameGenerator
         private int EatMyRandom()
         {
             
-            if(listbox1.Items.Count > 0) 
-            {
+            //if(listbox1.Items.Count > 0) 
+            //{
                 Random random = new Random();
                 return random.Next(listbox1.Items.Count - 1);
-            }
-            else
-            {
-                listbox1.Items.Add("");
-            }
-            return (int)MessageBox.Show("No more Names");
+            //}
+            //else
+            //{
+            //    listbox1.Items.Add("");
+            //}
+            //return (int)MessageBox.Show("No more Names");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             /*listbox2.Items.Add(listbox1.SelectedItem);*///adding first name from listbox1
             /*listbox1.Items.Remove(listbox1.SelectedItem);*///removing but cannot remove from datasource(binding)
+            
+            if(listbox1.Items.Count > 0)
+            {
             int choice = EatMyRandom();
             listbox2.Items.Add(listbox1.Items[choice]);
             listbox1.Items.Remove(listbox1.Items[choice]);
+            }
+            
+
             //if(listbox1.Items == "")create a show message box that all names have been clear.
             //{
 
