@@ -12,13 +12,10 @@ namespace RandomNameGenerator
 {
     public partial class RandomNameGenerator : Form
     {
-        //List<string> l1;
-
-  
         public RandomNameGenerator()
         {
             InitializeComponent();
-            
+
         }
         private int EatMyRandom()
         {
@@ -29,8 +26,6 @@ namespace RandomNameGenerator
              
         private void button1_Click(object sender, EventArgs e)
         {
-            /*listbox2.Items.Add(listbox1.SelectedItem);*///adding first name from listbox1
-            /*listbox1.Items.Remove(listbox1.SelectedItem);*///removing but cannot remove from datasource(binding)
             
             if(listbox1.Items.Count > 0)
             {
@@ -43,21 +38,10 @@ namespace RandomNameGenerator
                 button1.Enabled = false;
             }
 
-
-            //if(listbox1.Items == "")create a show message box that all names have been clear.
-            //{
-
-            //}
         }
 
         private void listbox1_SelectedIndexChanged(object sender, EventArgs e)
-        { 
-          
-
-            //List<string> l1 = new List<string>();
-            //l1.Add("scott");
-            //listbox1.Items.Add(l1);
-
+        {//containing names 
         }
 
     }
